@@ -8,10 +8,14 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div id="app">
-      <ul>
-        <li v-for="(email, index) in list">{{ email }}</li>
-      </ul>
+    <div id="app" v-cloak>
+      <div class="container">
+        <h1>Email dipendenti</h1>
+        <h6>(cambiano spesso)</h6>
+        <ul>
+          <li v-for="(email, index) in list">{{ email }}</li>
+        </ul>
+      </div>
     </div>
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
     <script src="main.mjs"></script>
