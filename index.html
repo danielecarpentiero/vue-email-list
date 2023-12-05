@@ -10,7 +10,7 @@
   <body>
     <div id="app">
       <ul>
-        <li>{{ list }}</li>
+        <li v-for="(email, index) in list">{{ email }}</li>
       </ul>
     </div>
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
